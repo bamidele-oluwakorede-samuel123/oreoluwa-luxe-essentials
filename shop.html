@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop | Oreoluwa LUXE ESSENCE</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="site-header"></div>
+    <main class="page-main">
+      <section class="page-intro">
+        <span class="eyebrow">THE LUXE ESSENCE COLLECTION</span>
+        <h1>Find your <em>everyday glow.</em></h1>
+        <p>Browse fragrances, skincare, cosmetics and body care.</p>
+      </section>
+      <section class="shop-tools">
+        <div class="filter-list" id="category-filters"></div>
+        <label class="search-box"
+          ><span>⌕</span
+          ><input
+            id="product-search"
+            type="search"
+            placeholder="Search products..."
+            aria-label="Search products"
+        /></label>
+      </section>
+      <div class="shop-result-line">
+        <span id="result-count"></span
+        ><select id="sort-products" aria-label="Sort products">
+          <option value="featured">Featured</option>
+          <option value="low">Price: low to high</option>
+          <option value="high">Price: high to low</option>
+        </select>
+      </div>
+      <div id="shop-products" class="product-grid shop-grid"></div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/products.js"></script>
+    <script src="js/site.js"></script>
+    <script src="js/shop.js"></script>
+  </body>
+</html>
